@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM9h6gyVdNoSqdZk3ANwXvC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tylerdbillings/5722-thursday-recitation/blob/main/fasta-generate\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "63yx-z7jdoy7"
+      },
+      "outputs": [],
+      "source": [
+        "fetch 2hoi\n",
+        "sele resi 127-343 and chain A # chain A is defined as inactive, chain B as the active conformer\n",
+        "create CreCat, sele\n",
+        "hide everything # I prefer to visualize new objects to be certain I made the right selection.\n",
+        "show cartoon, CreCat\n",
+        "cd # changes directory to your user file, in my case Users/billings.54\n",
+        "cd Desktop # saves to the desktop if you are lazy; you can also save a line above but idc\n",
+        "save CreCat.fasta, CreCat # general form: save file_name.fasta, object"
+      ]
+    }
+  ]
+}
